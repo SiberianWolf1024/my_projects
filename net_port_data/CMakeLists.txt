@@ -10,6 +10,8 @@ project(net_port_playback LANGUAGES C)
 
 message("CMAKE_C_FLAGS is ${CMAKE_C_FLAGS}")
 
+# 将可执行文件的输出目录设置为 bin
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 file(GLOB SOURCES_FILE
     ${CMAKE_SOURCE_DIR}/net_port_data_transfer.c
